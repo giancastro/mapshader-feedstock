@@ -1,5 +1,5 @@
 {% set name = "mapshader" %}
-{% set version = "0.0.9" %}
+{% set version = "0.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mapshader-{{ version }}.tar.gz
-  sha256: 168edf9337bef9fb6c4c688872cb742b353ee2bfe064180faea901cff2c94a89
+  sha256: bdad3b838f0ec853905fcdf40406a8c1744b5697ee6f6b04d926ff4d185b1291
 
 build:
   number: 0
