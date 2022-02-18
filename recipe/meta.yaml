@@ -1,5 +1,5 @@
 {% set name = "mapshader" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mapshader-{{ version }}.tar.gz
-  sha256: bdad3b838f0ec853905fcdf40406a8c1744b5697ee6f6b04d926ff4d185b1291
+  sha256: 15ea6a445067a29d67c9c4c6bcac8b913d5d244411b30e3e8111ac08e443481e
 
 build:
   number: 0
@@ -19,24 +19,25 @@ build:
 
 requirements:
   host:
-    - python >=3.6
-    - pyct-core
     - pip
-  run:
+    - pyct-core >=0.4.6
     - python >=3.6
-    - xarray-spatial
-    - geopandas
-    - jinja2
-    - rioxarray
-    - flask
-    - flask-cors
-    - rasterio
-    - psutil
-    - pyct-core
-    - descartes
-    - jupyter
-    - matplotlib
-    - pytest
+  run:
+    - click >=8.0.3
+    - descartes >=1.1.0
+    - flask >=2.0.2
+    - flask-cors >=3.0.10
+    - geopandas >=0.10.2
+    - jinja2 >=3.0.3
+    - jupyter >=1.0.0
+    - matplotlib >=3.5.1
+    - psutil >=5.9.0
+    - pyct-core >=0.4.6
+    - python >=3.6
+    - pytest >=6.2.5
+    - rasterio >=1.2.10
+    - rioxarray >=0.9.1
+    - xarray-spatial >=0.3.1
 
 test:
   imports:
@@ -56,4 +57,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - brendancol
     - giancastro
+    - ianthomas23
