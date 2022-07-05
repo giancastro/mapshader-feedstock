@@ -1,5 +1,5 @@
 {% set name = "mapshader" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mapshader-{{ version }}.tar.gz
-  sha256: 15ea6a445067a29d67c9c4c6bcac8b913d5d244411b30e3e8111ac08e443481e
+  sha256: 005040fd65d9b8b59096c6bf57d88455bd27232b0b98adc944dfe2016c116b49
 
 build:
   number: 0
@@ -32,11 +32,13 @@ requirements:
     - jupyter >=1.0.0
     - matplotlib >=3.5.1
     - psutil >=5.9.0
+    - pyarrow >=6.0.1
     - pyct-core >=0.4.6
     - python >=3.6
     - pytest >=6.2.5
     - rasterio >=1.2.10
     - rioxarray >=0.9.1
+    - spatialpandas >=0.4.3
     - xarray-spatial >=0.3.1
 
 test:
